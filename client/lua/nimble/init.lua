@@ -1,6 +1,6 @@
 local M = {}
 
-function M.complie()
+function M.compile()
 end
 
 function M.load()
