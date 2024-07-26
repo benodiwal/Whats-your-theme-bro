@@ -12,7 +12,7 @@ end
 ---@return nil
 function M.apply_theme()
     local theme = M.get_random_theme()
-    vim.cmd("colorscheme" .. theme)
+    vim.cmd("colorscheme " .. theme)
     print("Theme changes to: " .. theme)
 end
 
