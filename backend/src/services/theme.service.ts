@@ -1,21 +1,15 @@
-import { exec } from "child_process";
+import { attach } from 'neovim';
 
 class ThemeService {
-    change() {
-        const cmd = 'vim -c "RandomThemeChange" -c "qa!"';
-        exec(cmd, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`Error: ${error}`);
-                return;
-            }
-            if (stderr) {
-                console.error(`Stderr: ${stderr}`);
-                return;
-            }
-            console.log(`Stdout: ${stdout}`);
-        })
+    static async change() {
+        try {
+            const nvim = attach({ socket: '/run/user/1000/nvim.682832.0' });
+            await nvim.command('RandomThemeChange');
+            nvim.quit();
+        } catch (error) { 
+            console.error('Error sending command: ', error);
+        }
     }
 }
 
-const themeService = new ThemeService();
-export default themeService;
+export default ThemeService;
