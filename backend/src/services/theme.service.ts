@@ -2,7 +2,7 @@ import { exec } from "child_process";
 
 class ThemeService {
     change() {
-        const cmd = 'vim --headless -c "RandomThemeChange"';
+        const cmd = 'vim -c "RandomThemeChange" -c "qa!"';
         exec(cmd, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error: ${error}`);
