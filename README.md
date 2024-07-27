@@ -2,7 +2,7 @@
 
 A plugin to change my **Neovim Theme** to a random one whenever someone text me on **Whatsapp** 🎉
 
-## Prerequisites (if you want to try this for yourself 😅):
+## Prerequisites (if you want to try this yourself 😅):
 
 - **Add these themes to your Neovim Config**:
 
