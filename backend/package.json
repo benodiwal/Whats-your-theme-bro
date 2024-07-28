@@ -1,5 +1,5 @@
 {
-  "name": "bot9-ai",
+  "name": "wytb",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benodiwal/bot9-ai.git"
+    "url": "git+https://github.com/benodiwal/Whats-your-theme-bro.git"
   },
   "keywords": [
     "typescript",
@@ -22,9 +22,9 @@
   "author": "benodiwal <sachinbeniwal0101@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/benodiwal/bot9-ai/issues"
+    "url": "https://github.com/benodiwal/Whats-your-theme-bro/issues"
   },
-  "homepage": "https://github.com/benodiwal/bot9-ai#readme",
+  "homepage": "https://github.com/benodiwal/Whats-your-theme-bro#readme",
   "dependencies": {
     "@prisma/client": "5.16.1",
     "axios": "^1.7.2",
